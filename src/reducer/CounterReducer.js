@@ -1,7 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
-
 //reducer
-const counterReducer=(s={c:0},{type:a})=>
+export const counterReducer=(s={c:0},{type:a})=>
     {
         switch(a)
         {
@@ -12,7 +10,3 @@ const counterReducer=(s={c:0},{type:a})=>
             
         }
     }
-
-
-//store
-export const store=configureStore({reducer: counterReducer})
